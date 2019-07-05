@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Hello Javascript World</title>
+
+<style>
+body{ 
+
+background-color: rgb(235, 59, 103);
+color:white;
+
+}
+</style>
+
+</head>
+
+<body>
+
+
+<script>
+// COMENTARIO DE 1 LINHA
+/* comentario de multiplas linhas */ 
+
+/* o comando abaixo é 
+so é visto com o console (F12) */
+
+
+
+console.log("Alo Ha Mundo Javascript");
+/* Abre uma Janela com O conteudo */
+//alert("Saudades do sublime");
+/* Garente que a função so sera executada apos todo o html ser carregado */ 
+window.onload = function(){
+
+document.querySelector("h1").textContent = "js é Show";
+var paçoca = document.querySelector("h1");
+paçoca.innerHTML = "<em> Js não é Java</em> ";
+paçoca.style = "font-size:50px; color: deepskyblue ; ";
+// variavel local moderna
+let h12 = document.querySelector(".segundoh1");
+let h13 = document.querySelector("#terceiroh1");
+
+h12.style = "font-size:10px;"
+h13.style = "text-shadow: 3px 3px 5px black;"
+
+let h_uns = document.querySelectorAll("h1");
+
+for (let i=0; i < h_uns.length; i++)
+h_uns[i].style = "border: 2px dashed white"; 
+}
+
+// JS variables
+//https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1
+
+var carName = "Volvo";
+
+
+
+</script>
+
+<h1>Introdução à linguagm Javascript</h1>
+<h1 class="segundoh1">outro h1 </h1>
+<h1 id= "terceiroh1">mais um h1</h1>
+
+
+
+
+
+<h2>Exemplo da Lâmpada</h2>
+
+<div style="text-align: center; background-color: blue">
+<button onclick="document.querySelector('#lampada').src = 'acesa.gif'"> Acender </button>
+<img src="apagada.gif" id="lampada" alt="lampada apagada" onmouseover="acender()" onmouseout="apagar()" >
+<button onclick="document.querySelector('#lampada').src = 'apagada.gif'"> Apagar</button>
+</div>
+apagar
+<script>
+var lampada = document.querySelector("#lampada");
+function acesa(){lampada.src = "acesa.gif"};
+function apagar(){lampada.src = "apagada.gif"};
+</script>
+
+
+<script> </script>
+
+
+</body>
+</html>
