@@ -48,7 +48,7 @@ function setup() {
 
 //Um loping sempre, desenha o que tem dentro
 function draw() {
-  background("black");
+  background("orange");
   stroke("white");
   strokeWeight(3);
   line(metadeTela,0,metadeTela,alturaTela)
@@ -103,12 +103,12 @@ function jogar(){
 };
 
 function setasVenceu(){
-  fill("white")
+  fill("black")
   rect(metadeTela, 0, larguraTela, alturaTela)
   textSize(40);
-  fill("red");
+  fill("purple");
   textAlign(CENTER);
-  text("Setas venceu", metadeTela + metadeTela/2, alturaTela);
+  text("Setas venceu", metadeTela + metadeTela/2, alturaTela/2);
 
 }
 
