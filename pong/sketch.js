@@ -64,7 +64,7 @@ function draw() {
 
 function telaInicial(){
 
-  fill("DodgerBlue");
+  fill("red");
   rect(larguraTela/4, 0, metadeTela, alturaTela);
   textAlign(CENTER);
   fill("Purple")
